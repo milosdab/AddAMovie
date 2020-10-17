@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center text-primary">My Movie List</h1>
+        <form id="movie-form">
+            <div class="movie-group">
+                <label for="title">Movie Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="movie-group">
+                <label for="director">Movie Director</label>
+                <input type="text" id="director" class="form-control">
+            </div>
+            <div class="movie-group">
+                <label for="actor">Main Actor/Actress</label>
+                <input type="text" id="actor" class="form-control">
+            </div>
+            <button value="Add movie" class="btn btn-primary btn-block mt-5" id="addmovie">Add movie</button>
+        </form>
+        <table class="table table-striped mt-5">
+         <thead>
+             <tr>
+                 <th>Title</th>
+                 <th>Director</th>
+                 <th>Actor/Actress</th>
+                 <th></th>
+             </tr>
+         </thead>
+         <tbody id="movie-list">
+
+         </tbody>
+        </table>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
